@@ -3,7 +3,7 @@
 # This script uses a 301 redirection to nyancat
 # https://www.youtube.com/watch?v=QH2-TGUlwu4
 
-find="\tlocation / {"
+find="#\tlocation / {"
 replace301="#\tlocation /redirect_me {\n#\t\treturn 301 \@scheme://youtube.com/watch?v=QH2-TGUlwu4;\n#\t}\n#\n#\tlocation / {"
 
 sudo apt-get -y update
