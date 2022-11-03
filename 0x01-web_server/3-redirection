@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script installs nginx on web-01 server
+# This script uses a 301 redirection to nyancat
+# https://www.youtube.com/watch?v=QH2-TGUlwu4
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get install -y nginx
+sudo ufw allow 'Nginx HTTP'
+sudo /etc/init.d/nginx restart
+sudo rm /var/www/html/*.html
+sudo echo "Hello World" | sudo tee /var/www/html/index.html
