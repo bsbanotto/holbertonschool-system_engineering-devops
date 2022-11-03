@@ -7,4 +7,4 @@ sudo apt-get -y upate
 sudo apt-get -u upgrade
 sudo apt-get -y install nginx
 sud rm /var/www/html/*.html
-sudo echo "Hello World\n" > /var/www/html/index.html 
+sudo echo "Hello World\n" | sudo tee /var/www/html/index.html 
