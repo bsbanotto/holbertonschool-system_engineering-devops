@@ -10,5 +10,5 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install haproxy
 echo ENABLED=1 | sudo tee -a /etc/default/haproxy
-echo -e "$config_frontend"+"$config_backend" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo -e "$config_frontend""$config_backend" | sudo tee -a /etc/haproxy/haproxy.cfg
 sudo service haproxy start
