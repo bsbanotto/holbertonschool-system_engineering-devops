@@ -1,6 +1,6 @@
 This is a README for project 0x0E. API
 
-There are 3 mandatory tasks in this project
+There are 4 mandatory tasks in this project
 
 Task 0 - Gather data from an API
  - Write a python script that returns information about a given employees TODO
@@ -28,3 +28,7 @@ Task 2 - Export to JSON
     {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS,
     "username": "USERNAME"}, ... ]}
     - File name must be: USER_ID.json
+
+Task 3 - Dictionary of list of dictionaries
+ - Using task 0, extend the script to export data in the JSON
+    - Data is for all employees
