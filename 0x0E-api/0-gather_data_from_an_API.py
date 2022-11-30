@@ -37,7 +37,7 @@ def get_employee_todo():
         name"), num_complete, len(employee_todo)))
 
     for task in completed:
-        print(" \t{}".format(task))
+        print("\t {}".format(task))
 
 if __name__ == "__main__":
     get_employee_todo()
