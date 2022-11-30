@@ -22,7 +22,7 @@ def everyone_todo_to_JSON():
         user_id = employee.get('id')
         return_dict[user_id] = []
         all_users_dict[user_id] = employee.get('username')
-    print(all_users_dict)
+    # print(all_users_dict)
     for task in employees_todos:
         employee_tasks_dict = {}
         user_id = task.get('userId')
