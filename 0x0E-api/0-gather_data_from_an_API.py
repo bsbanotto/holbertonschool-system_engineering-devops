@@ -35,7 +35,7 @@ def get_employee_todo():
     name = employee_name.get("name")
     a = num_complete
     b = len(employee_todo)
-    print("Employee {} is done with tasks ({}/{}):".format(name, a, b))
+    print("Employee {} is done with tasks({}/{}):".format(name, a, b))
     for task in completed:
         print("\t {}".format(task))
 
