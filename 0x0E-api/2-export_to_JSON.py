@@ -29,7 +29,7 @@ def employee_todo_to_JSON():
         employee_tasks.append(task_dict)
     json_dict = {}
     json_dict[employee_id] = employee_tasks
-    with open ('{}.json'.format(employee_id), 'w') as JSONFile:
+    with open('{}.json'.format(employee_id), 'w') as JSONFile:
         json.dump(json_dict, JSONFile)
 
 if __name__ == "__main__":
