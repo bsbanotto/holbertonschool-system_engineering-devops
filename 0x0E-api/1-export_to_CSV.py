@@ -5,10 +5,10 @@ import requests
 import sys
 
 
-def get_employee_todo():
+def employee_todo_to_csv():
     """This method gathers employee to do information from an API
 
-    See README for display format
+    Employee task information is sent to a CSV file
     """
     employee_id = sys.argv[1]
     url = "https://jsonplaceholder.typicode.com/"
@@ -27,4 +27,4 @@ def get_employee_todo():
             writer.writerow(data)
 
 if __name__ == "__main__":
-    get_employee_todo()
+    employee_todo_to_csv()
