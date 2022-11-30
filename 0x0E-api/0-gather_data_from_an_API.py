@@ -32,10 +32,10 @@ def get_employee_todo():
             completed.append(task.get("title"))
     # print(num_complete)
     # print(len(employee_todo))
-
-    print("Employee {} is done with tasks ({}/{}):".format(employee_name.get("\
-        name"), num_complete, len(employee_todo)))
-
+    name = employee_name.get("name")
+    a = num_complete
+    b = len(employee_todo)
+    print("Employee {} is done with tasks ({}/{}):".format(name, a, b))
     for task in completed:
         print("\t {}".format(task))
 
