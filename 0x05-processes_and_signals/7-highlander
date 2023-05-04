@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Task 7. Give a response when you get the sigterm
+while (true)
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap "echo 'I am invincible!!!'" SIGTERM
+done

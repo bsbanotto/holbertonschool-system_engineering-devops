@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Task 7. Stop an highlander loop using pkill
+pkill -f 'highlander'

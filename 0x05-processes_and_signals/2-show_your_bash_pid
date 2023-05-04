@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Task 2. From previous exercise, show all Bash processes
+# shellcheck disable=SC2009
+ps axuf | less | grep 'bash$'

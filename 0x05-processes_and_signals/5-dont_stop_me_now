@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Task 5. Stop an infinite loop
+DIE=$(pgrep -f 'infinity')
+kill "$DIE"

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Task 3. Show all Bash processes, this time using pgrep
+pgrep -l 'bash$'
